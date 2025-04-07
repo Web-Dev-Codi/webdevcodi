@@ -117,7 +117,7 @@ export default function Hero() {
               style={imageStyle}
               src={HeroImage}
               decoding="sync"
-              priority
+              priority="true"
             />
           </div>
         </m.div>

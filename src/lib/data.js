@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   {
     id: 1,
     title: "Inquizable",
@@ -80,3 +80,5 @@ export const data = [
     href: "https://flixxmoviesearchengine.vercel.app/",
   },
 ];
+
+export default data;
