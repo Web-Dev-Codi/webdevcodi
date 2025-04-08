@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     title: "Inquizable",
-    stackImages: [
+    src: [
       "/src/assets/icons/SkillIconsJavascript.svg",
       "/src/assets/icons/SkillIconsTailwindcssLight.svg",
       "/src/assets/icons/SkillIconsReactDark.svg",
@@ -16,7 +16,7 @@ const data = [
   {
     id: 2,
     title: "GitHub Finder",
-    stackImages: [
+    src: [
       "/src/assets/icons/SkillIconsJavascript.svg",
       "/src/assets/icons/SkillIconsViteDark.svg",
       "/src/assets/icons/SkillIconsReactDark.svg",
@@ -30,7 +30,7 @@ const data = [
   {
     id: 3,
     title: "Four Flavours Express",
-    stackImages: [
+    src: [
       "/src/assets/icons/SkillIconsJavascript.svg",
       "/src/assets/icons/SkillIconsTailwindcssLight.svg",
       "/src/assets/icons/SkillIconsReactDark.svg",
@@ -43,7 +43,7 @@ const data = [
   {
     id: 4,
     title: "Diet-Tracker",
-    stackImages: [
+    src: [
       "/src/assets/icons/SkillIconsJavascript.svg",
       "/src/assets/icons/SkillIconsCss.svg",
       "/src/assets/icons/SkillIconsHtml.svg",
@@ -56,7 +56,7 @@ const data = [
   {
     id: 5,
     title: "Text to Image Generator",
-    stackImages: [
+    src: [
       "/src/assets/icons/SkillIconsJavascript.svg",
       "/src/assets/icons/SkillIconsTailwindcssLight.svg",
       "/src/assets/icons/SkillIconsReactDark.svg",
@@ -68,7 +68,7 @@ const data = [
   {
     id: 6,
     title: "Flixx Movie Database",
-    stackImages: [
+    src: [
       "/src/assets/icons/SkillIconsJavascript.svg",
       "/src/assets/icons/SkillIconsCss.svg",
       "/src/assets/icons/SkillIconsHtml.svg",

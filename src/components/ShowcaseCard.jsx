@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../lib/data";
+// import ShowcaseTechStackImg from "./ShowcaseTechStackImg";
 import { ImArrowRight } from "react-icons/im";
 
 const showcaseStyle = {
@@ -29,16 +30,15 @@ export default function ShowcaseCard() {
           <div className="showcase-card__text-wrapper" id="text-wrapper">
             <h2 className="showcase-card__title">{item.title}</h2>
             <div className="showcase-card__tech_stack">
-              {/* {data.forEach((stackImage, index) => ( */}
-              {/*   <img */}
-              {/*     key={index} */}
-              {/*     alt={`Stack Image ${index}`} */}
-              {/*     width={25} */}
-              {/*     height={25} */}
-              {/*     style={{ color: "transparent" }} */}
-              {/*     src={stackImage} */}
-              {/*   /> */}
-              {/* ))} */}
+              {data.map((image, index) => (
+                <img
+                  key={index}
+                  src={image} // Assuming stackImages is an array of objects with a 'src' property
+                  alt={image.alt || `Tech stack ${index + 1}`} // Optional alt text
+                  width={25}
+                  height={25}
+                />
+              ))}
             </div>
             <div
               className="showcase-card__details-wrapper"
