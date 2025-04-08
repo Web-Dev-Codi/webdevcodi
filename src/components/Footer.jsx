@@ -1,6 +1,6 @@
-import Linkedin from "../../public/icons/DeviconLinkedin.svg";
-import Twitter from "../../public/icons/DeviconTwitter.svg";
-import Git from "../../public/icons/LogosGithubIcon.svg";
+import Linkedin from "../assets/icons/DeviconLinkedin.svg";
+import Twitter from "../assets/icons/DeviconTwitter.svg";
+import Git from "../assets/icons/LogosGithubIcon.svg";
 
 const date = new Date().getFullYear();
 

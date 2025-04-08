@@ -1,15 +1,14 @@
-import Html from "../../public/images/html.svg";
-import Css from "../../public/images/css3.svg";
-// import Js from "../../public/images/javascript.svg"
-import Tailwind from "../../public/icons/SkillIconsTailwindcssLight.svg";
-import Ts from "../../public/images/typescript.svg";
-import Git from "../../public/images/git.svg";
-import Node from "../../public/images/node.svg";
-import React from "../../public/icons/React.png";
-import Javascript from "../../public/icons/JavaScript.png";
-import Next from "../../public/icons/Nextjs-logo.svg";
-import GitLogo from "../../public/icons/gh.svg";
-import Vite from "../../public/icons/SkillIconsViteDark.svg";
+import Html from "../assets/images/html.svg";
+import Css from "../assets/images/css3.svg";
+import Tailwind from "../assets/icons/SkillIconsTailwindcssLight.svg";
+import Ts from "../assets/images/typescript.svg";
+import Git from "../assets/images/git.svg";
+import Node from "../assets/images/node.svg";
+import React from "../assets/icons/React.png";
+import Javascript from "../assets/icons/JavaScript.png";
+import Next from "../assets/icons/Nextjs-logo.svg";
+import GitLogo from "../assets/icons/gh.svg";
+import Vite from "../assets/icons/SkillIconsViteDark.svg";
 
 export default function Skills() {
   return (

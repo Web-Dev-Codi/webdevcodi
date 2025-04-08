@@ -29,16 +29,16 @@ export default function ShowcaseCard() {
           <div className="showcase-card__text-wrapper" id="text-wrapper">
             <h2 className="showcase-card__title">{item.title}</h2>
             <div className="showcase-card__tech_stack">
-              {data.forEach((stackImage, index) => (
-                <img
-                  key={index}
-                  alt={`Stack Image ${index}`}
-                  width={25}
-                  height={25}
-                  style={{ color: "transparent" }}
-                  src={stackImage}
-                />
-              ))}
+              {/* {data.forEach((stackImage, index) => ( */}
+              {/*   <img */}
+              {/*     key={index} */}
+              {/*     alt={`Stack Image ${index}`} */}
+              {/*     width={25} */}
+              {/*     height={25} */}
+              {/*     style={{ color: "transparent" }} */}
+              {/*     src={stackImage} */}
+              {/*   /> */}
+              {/* ))} */}
             </div>
             <div
               className="showcase-card__details-wrapper"

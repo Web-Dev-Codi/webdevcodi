@@ -1,8 +1,8 @@
 "use client";
-import Twitter from "../../public/images/twitter-256.svg";
-import Github from "../../public/images/github-256.svg";
-import Linkedin from "../../public/images/linkedin-256.svg";
-import HeroImage from "../../public/images/coffeecoder.png";
+import Twitter from "../assets/images/twitter-256.svg";
+import Github from "../assets/images/github-256.svg";
+import Linkedin from "../assets/images/linkedin-256.svg";
+import HeroImage from "../assets/images/coffeecoder.png";
 import { motion as m } from "framer-motion";
 
 const imageStyle = {

@@ -1,5 +1,5 @@
 import ShowcaseCard from "./ShowcaseCard";
-import wave from "/images/wave1440.svg";
+import wave from "../assets/images/wave1440.svg";
 
 export default function Showcase() {
   return (
