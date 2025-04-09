@@ -58,13 +58,11 @@ body {
   border-bottom: solid;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: linear-gradient(
-    90deg,
-    rgba(255, 20, 189, 1) 20%,
-    rgba(8, 40, 247, 1) 40%,
-    rgba(255, 20, 189, 1) 60%,
-    rgba(8, 40, 247, 1) 81%
-  );
+  border-image-source: linear-gradient(90deg,
+      rgba(255, 20, 189, 1) 20%,
+      rgba(8, 40, 247, 1) 40%,
+      rgba(255, 20, 189, 1) 60%,
+      rgba(8, 40, 247, 1) 81%);
   height: 60px;
   width: 100%;
   z-index: 1;
@@ -79,6 +77,7 @@ body {
   gap: 15px;
   width: 50%;
 }
+
 .nav_left {
   display: flex;
   align-items: center;
@@ -433,7 +432,7 @@ h5 {
   font-size: 20px;
   font-weight: bolder;
   text-decoration: none;
-  width: 100px;
+  min-width: 120px;
   border: var(--clr-neon-blue) 0.125em solid;
   border-radius: 0.25em;
   padding: 10px 25px;
@@ -443,6 +442,15 @@ h5 {
   box-shadow:
     inset 0 0 0.5em 0 var(--clr-neon-blue),
     0 0 0.5em 0 var(--clr-neon-blue);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.submit_button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .contact_button::before {
@@ -649,8 +657,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0)
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);
   z-index: 0;
 }
 
@@ -735,6 +742,7 @@ h3 {
   place-content: center;
   height: 100vh;
 }
+
 .modal-container {
   display: flex;
   flex-direction: row-reverse;
@@ -752,6 +760,7 @@ h3 {
 .modal-container p {
   font-size: 25px;
 }
+
 .close-modal {
   display: flex;
   justify-content: flex-end;
@@ -814,10 +823,6 @@ button {
   padding: 1rem;
 }
 
-/* button:hover,
-button:focus {
-	background: #272eb5;
-} */
 
 .validation-message {
   display: block;
@@ -830,17 +835,24 @@ button:focus {
   font-size: 14px;
 }
 
+.status-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-weight: 500;
+}
+
 .footer {
   border-top: solid;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: linear-gradient(
-    90deg,
-    rgba(255, 20, 189, 1) 20%,
-    rgba(8, 40, 247, 1) 40%,
-    rgba(255, 20, 189, 1) 60%,
-    rgba(8, 40, 247, 1) 81%
-  );
+  border-image-source: linear-gradient(90deg,
+      rgba(255, 20, 189, 1) 20%,
+      rgba(8, 40, 247, 1) 40%,
+      rgba(255, 20, 189, 1) 60%,
+      rgba(8, 40, 247, 1) 81%);
   height: 60px;
   width: 100%;
   z-index: 9;
@@ -975,12 +987,15 @@ button:focus {
     max-height: 20rem;
     opacity: 1;
   }
+
   .showcase-card:hover .showcase-card__text-wrapper {
     background-color: rgba(0, 0, 0, 0.6);
   }
+
   .showcase-card:hover .showcase-card__title {
     color: #ffff00;
   }
+
   .showcase-card:hover .showcase-card__image {
     transform: scale(1.2);
     z-index: -1;
@@ -992,13 +1007,16 @@ button:focus {
     max-height: 20rem;
     opacity: 1;
   }
+
   .showcase-card:hover .showcase-card__text-wrapper {
     transform: translateY(-0.06rem);
     background-color: rgba(0, 0, 0, 0.6);
   }
+
   .showcase-card:hover .showcase-card__title {
     color: yellow;
   }
+
   .showcase-card:hover .showcase-card__image {
     transform: scale(1.2);
     z-index: -1;
@@ -1078,6 +1096,7 @@ button:focus {
   .hero_left p {
     font-size: 18px;
   }
+
   .hero_text {
     width: 100%;
   }
@@ -1103,6 +1122,7 @@ button:focus {
     /* margin-top: 50px;
 		padding-top: 20px; */
   }
+
   .hero_wrapper {
     width: 100%;
   }
@@ -1120,6 +1140,7 @@ button:focus {
     width: 18px;
     height: 18px;
   }
+
   .hero_left h1 {
     margin: 20px 0px;
     padding: 0px;
@@ -1155,6 +1176,7 @@ button:focus {
     margin-bottom: 25px;
     padding: 0;
   }
+
   .about_me_right {
     font-size: 12px;
     width: 90%;
@@ -1220,9 +1242,11 @@ button:focus {
     width: 50px;
     height: 50px;
   }
+
   .barcode_font {
     font-size: 20px;
   }
+
   .copy_para {
     font-size: 12px;
   }
@@ -1239,6 +1263,7 @@ button:focus {
   .copyright_link {
     margin: 5px 0px;
   }
+
   .showcase_title,
   .skills_header,
   .contact {
@@ -1266,11 +1291,13 @@ button:focus {
     width: 6rem;
     font-size: 0.7rem;
   }
+
   .showcase-card__visit p {
     font-size: 12px;
     margin: 3px;
     padding: 3px;
   }
+
   .showcase-card__title {
     font-size: 20px;
   }

@@ -6,9 +6,51 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // API endpoint - change this for production
+  const API_URL = import.meta.env.VITE_API_URL || '[https://your-backend-url.railway.app](https://your-backend-url.railway.app)' || 'http://localhost:8000';
 
   async function handleSubmit(e) {
     e.preventDefault();
+
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
+    setStatus("Sending...");
+
+    try {
+      const response = await fetch(`${API_URL}/api/send-email`, {
+        method: 'POST',
+        body: JSON.stringify({ name, email, message }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
+      // Clear form fields
+      setName("");
+      setEmail("");
+      setMessage("");
+      setStatus("Message sent successfully!");
+
+      // Reset status message after 5 seconds
+      setTimeout(() => {
+        setStatus("");
+      }, 5000);
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setStatus("Failed to send message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -26,6 +68,7 @@ export default function Contact() {
             value={name}
             autoComplete="true"
             required
+            disabled={isSubmitting}
           />
         </div>
         <div>
@@ -39,6 +82,7 @@ export default function Contact() {
             type="email"
             autoComplete="true"
             required
+            disabled={isSubmitting}
           />
         </div>
         <div>
@@ -52,17 +96,20 @@ export default function Contact() {
             onChange={(e) => setMessage(e.target.value)}
             value={message}
             required
+            disabled={isSubmitting}
           ></textarea>
         </div>
+        {status && <div className="status-message">{status}</div>}
         <m.button
           whileHover={{
-            scale: 1.1,
+            scale: isSubmitting ? 1 : 1.1,
           }}
           transition={{ type: "spring", stiffness: 300 }}
           className="submit_button"
           type="submit"
+          disabled={isSubmitting}
         >
-          Send
+          {isSubmitting ? "Sending" : "Send"}
         </m.button>
       </form>
     </div>
