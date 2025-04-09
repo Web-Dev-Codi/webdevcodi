@@ -9,7 +9,7 @@ export default function Contact() {
   const [status, setStatus] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // API endpoint - change this for production
+
   const API_URL = import.meta.env.VITE_API_URL || '[https://your-backend-url.railway.app](https://your-backend-url.railway.app)' || 'http://localhost:8000';
 
   async function handleSubmit(e) {
