@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors({
-  origin: ['https://portfolio-rewrite-vite2.onrender.com', 'http://localhost:5173'],
+  origin: ['https://web-dev-codi.onrender.com', 'http://localhost:5173'],
   methods: ['GET', 'POST'],
   credentials: true
 }));
