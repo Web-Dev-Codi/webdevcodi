@@ -1,19 +1,19 @@
 import React from "react";
-import data from "../lib/data"; // Adjust the path as needed
+import data from "../lib/data";
 
-const ShowcaseTechStackImg = () => {
+const ShowcaseTechStackImg = ({ techStack }) => {
   return (
-    <div className="tech-stack">
-      {data.map((image, index) => (
+    <>
+      {techStack && techStack.map((src, index) => (
         <img
           key={index}
-          src={image.src} // Assuming stackImages is an array of objects with a 'src' property
-          alt={image.alt || `Tech stack ${index + 1}`} // Optional alt text
+          src={src}
+          alt={`Tech stack ${index + 1}`}
           width={25}
           height={25}
         />
       ))}
-    </div>
+    </>
   );
 };
 

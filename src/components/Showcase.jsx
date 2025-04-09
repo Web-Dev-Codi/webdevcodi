@@ -7,7 +7,7 @@ export default function Showcase() {
       className="showcase_container"
       id="showcase_container"
       style={{
-        backgroundImage: `url(${wave.src})`,
+        backgroundImage: `url(${wave})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}

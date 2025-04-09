@@ -12,7 +12,6 @@ export default function Nav() {
               Web Developer
             </a>
           </div>
-          <span className="nav_center">Site is under construction.</span>
           <div className="nav_right">
             <CV />
           </div>

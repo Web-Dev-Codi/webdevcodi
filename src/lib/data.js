@@ -12,6 +12,7 @@ const data = [
     description:
       "Test your general knowledge with this quiz app. User log-in,registration and profile page.",
     href: "https://www.inquizable.com/",
+    alt: "Inquizable",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const data = [
     description:
       "Search Githubs database for users, and display repos, stars, and achievements.",
     href: "https://git-hub-finder-vite.vercel.app/",
+    alt: "GitHub Finder",
   },
   {
     id: 3,
@@ -39,6 +41,7 @@ const data = [
     description:
       "Four Flavours Express is a food delivery service that allows you to have your favourite meals delivered to your door.",
     href: "https://fourflavoursexpress.onrender.com/",
+    alt: "Four Flavours Express",
   },
   {
     id: 4,
@@ -52,6 +55,7 @@ const data = [
     description:
       "Track calories burnt from exercise and dieting. Meals and workouts are calculated from daily expenditure.",
     href: "https://dietracker.vercel.app/",
+    alt: "Diet-Tracker",
   },
   {
     id: 5,
@@ -64,6 +68,7 @@ const data = [
     imgUrl: "/src/assets/images/ai.jpg",
     description: "Generate a custom image from text within seconds using AI.",
     href: "https://texttoimagegenerator.vercel.app/",
+    alt: "Text to Image Generator",
   },
   {
     id: 6,
@@ -78,6 +83,7 @@ const data = [
     description:
       " Search a movie database for new releases, ratings and possible viewing pleasure",
     href: "https://flixxmoviesearchengine.vercel.app/",
+    alt: "Flixx Movie Database",
   },
 ];
 
