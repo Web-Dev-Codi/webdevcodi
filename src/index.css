@@ -976,11 +976,6 @@ button {
   }
 }
 
-@media (max-width: 900px) {
-  .showcase-card {
-    height: 20rem;
-  }
-}
 
 @media (min-width: 900px) {
   .showcase-card:hover .showcase-card__details-wrapper {
