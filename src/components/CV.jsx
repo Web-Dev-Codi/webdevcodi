@@ -6,7 +6,7 @@ export const CV = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="resume_button"
-        download="BrianCordiscoCVApril2025.pdf"
+        download="Brian_Cordisco_CV"
       >
         Resume
       </a>
